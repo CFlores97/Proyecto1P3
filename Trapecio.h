@@ -9,8 +9,8 @@ public:
 	~Trapecio();
 
 	//polimorfos
-	virtual double area() override;
-	virtual double perimetro() override;
+	double area() override;
+	double perimetro() override;
 	virtual void dibujar() override;
 
 	//getters

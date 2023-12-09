@@ -8,7 +8,7 @@ public:
 	~Rectangulo();
 
 	//polimorfos
-	virtual double area() override;
+	double area() override;
 	virtual double perimetro() override;
 	virtual void dibujar() override;
 

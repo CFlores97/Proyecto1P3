@@ -1,27 +1,26 @@
 #pragma once
 #include "Figura.h"
-class Cometa
-{
-
+class Cometa : public Figura{
+	int a, b, d, D;
 public:
-	Triangulo(int, int, int, int);
-	~Triangulo();
+	Cometa(int a, int b, int d, int D);
+	~Cometa();
 
 	//polimorfos
-	virtual double area() override;
-	virtual double perimetro() override;
+	double area() override;
+	double perimetro() override;
 	virtual void dibujar() override;
 
 	//getters
 	int getA();
 	int getB();
-	int getC();
-	int getH();
+	int getD();
+	int getDMayus();
 
 	//setters
 	void setA(int);
 	void setB(int);
-	void setC(int);
-	void setH(int);
+	void setD(int);
+	void setDMayus(int);
 };
 
